@@ -1,0 +1,106 @@
+.Dialog_bg{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Dialog_box{
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.Dialog_title{
+    display: inline-block;
+    text-align: center;
+}
+
+.title_Close_Btn{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+.title_Close_Btn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+.Dialog_box .body {
+    /* flex: 50%; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center; */
+}
+
+.age{
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(245, 59, 189);
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.occasion{
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.gender{
+    width: 150px;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    background-color: rgb(237, 173, 100);
+    color: rgb(228, 32, 32);
+    font-size: 20px;
+    cursor: pointer;   
+}
+
+.Dialog_box .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+.Dialog_box .footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+#cancelBtn {
+    background-color: crimson;
+  }
