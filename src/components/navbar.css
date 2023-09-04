@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+
+.nav{
+    background-color:  #E34098;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav > img{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+.nav a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+.site-title{
+    font-size: 2rem;
+}
+
+.nav-list a:hover{
+    background-color: rgb(247, 202, 221);
+    color:rgb(233, 108, 108);
+    border-radius: 50%;
+}
+
+.site-title{
+    width: 90px;
+    height: 80px;
+    border-radius: 80%;
+    padding: 0;
+}
+
