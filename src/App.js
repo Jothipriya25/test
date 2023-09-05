@@ -20,6 +20,7 @@ import './App.css';
 import Dialog from './components/dialog';
 import Navbar from './components/navbar';
 import Home from './components/home';
+import Help from './components/help';
 // import ReactDOM from "react-dom";
 // import Frame from 'react-frame-component';
 
@@ -65,10 +66,11 @@ switch (window.location.pathname) {
       </div>
     );
     break;
-    case '/cart':
+    case '/help':
       components = (
         <div>
           <Navbar />
+          <Help />
         </div>
       );
       break;

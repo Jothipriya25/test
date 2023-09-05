@@ -12,9 +12,9 @@ export default function navbar(){
             {/* <li>
             <a href="/menu" className="menu"><h3>Menu</h3></a>
             </li> */}
-            {/* <li>
-            <a href="/cart" className="cart"><h3>Cart</h3></a>
-            </li> */}
+            <li>
+            <a href="/help" className="help"><h3>Help</h3></a>
+            </li>
             <li>
             <a href="/dialog" className="dialog"><h3>Products</h3></a>
             </li>
