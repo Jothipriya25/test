@@ -1,7 +1,9 @@
 import './navbar.css';
+import Logo from '../logo.jpg';
+
 export default function navbar(){
     return <nav className="nav">
-        <img src='https://cdn.dribbble.com/users/5976/screenshots/3394063/omg.gif' className="site-title" alt="logo"></img>
+        <img src= {Logo} className="site-title" alt="logo"></img>
         <ul className="nav-list">
             <li>
             <a href="/" className="home"><h3>Home</h3></a>
@@ -16,7 +18,7 @@ export default function navbar(){
             <a href="/help" className="help"><h3>Help</h3></a>
             </li>
             <li>
-            <a href="/dialog" className="dialog"><h3>Products</h3></a>
+            <a href="/dialog" className="dialog"><h3>Product</h3></a>
             </li>
         </ul>
     </nav>

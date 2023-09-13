@@ -21,12 +21,54 @@ import Dialog from './components/dialog';
 import Navbar from './components/navbar';
 import Home from './components/home';
 import Help from './components/help';
+import Product from './components/product';
 // import ReactDOM from "react-dom";
 // import Frame from 'react-frame-component';
 
 
 
 function App() {
+
+  // const products = [
+  //   {
+  //     id: 1,
+  //     name: 'Product 1',
+  //     price: 19.99,
+  //     description: 'Lorem ipsum dolor sit amet.',
+      
+  //   },
+  //   {
+  //     id: 2,
+  //     name: 'Product 2',
+  //     price: 29.99,
+  //     description: 'Consectetur adipiscing elit jbsdgvu jhvyufgewyf jugyfewtfyu jbkugftwefu jugfytwefu hjgfetw6f',
+  //   },
+  //   {
+  //     id: 3,
+  //     name: 'Product 1',
+  //     price: 19.99,
+  //     description: 'Lorem ipsum dolor sit amet.',
+  //   },
+  //   {
+  //     id: 4,
+  //     name: 'Product 2',
+  //     price: 29.99,
+  //     description: 'Consectetur adipiscing elit.',
+  //   },
+  //   {
+  //     id: 5,
+  //     name: 'Product 1',
+  //     price: 19.99,
+  //     description: 'Lorem ipsum dolor sit amet.',
+  //   },
+  //   {
+  //     id: 6,
+  //     name: 'Product 2',
+  //     price: 29.99,
+  //     description: 'Consectetur adipiscing elit.',
+  //   },
+  //   // Add more products here
+  // ];
 
 //   const [openDialog , setOpenDialog] = useState(false);
 // return (
@@ -79,6 +121,16 @@ switch (window.location.pathname) {
         <div>
           <Navbar />
           <Dialog />
+          
+        </div>
+      );
+      break;
+      case '/product':
+      components = (
+        <div>
+          <Navbar />
+          <Product/>
+          
         </div>
       );
       break;

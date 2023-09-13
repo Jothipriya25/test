@@ -1,0 +1,57 @@
+.help_bg{
+    /* background-color: pink; */
+    background-image: url('https://t3.ftcdn.net/jpg/03/91/29/16/360_F_391291636_eIWPrRHskx9S3OuJfuzCna5l5CkIQAxu.jpg');
+    height: 300px;
+    background-size: cover;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.search{
+    width: 30%;
+    height: 33px;
+    border-radius: 15px;
+    border: 2px pink;
+
+}
+
+
+.search_font{
+    position: relative;
+    right: 30px;
+    top: 1px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    text-align: center;
+}
+
+.grid1{
+    background-color: white;
+}
+
+.grid2{
+    background-color: white;
+}
+
+.grid3{
+    background-color: white;
+}
+
+.grid4{
+    background-color: white;
+}
+
+.container{
+    background-color: pink;
+    padding: 20px;
+}
+

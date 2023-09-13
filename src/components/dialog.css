@@ -73,21 +73,23 @@
     border: none;
     background-color: #ba9baccf;
     color: white;
-    border-radius: 8px;
+    border-radius: 15px;
     font-size: 20px;
     cursor: pointer;
+    padding: 10px;
 }
 
 .occasion{
     width: 300px;
-    height: 40px;
+    height: 44px;
     margin-left: 36px;
     border: none;
     background-color: #ba9baccf;
     color: white;
-    border-radius: 8px;
+    border-radius: 15px;
     font-size: 20px;
     cursor: pointer;
+    padding: 10px;
 }
 
 .gender{
