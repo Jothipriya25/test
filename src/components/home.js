@@ -1,10 +1,14 @@
 import React from "react";
 import './dialog.css';
+import {FaGifts} from "react-icons/fa";
 
 function Home() {
     return(
         <div className="home_bg">
-            <h1>Welcome to OMG..</h1>
+            {/* <div className="home_bg1"> */}
+            <h1 className="welcome">Welcome to OMG..<FaGifts size={90}/></h1>
+            {/* </div> */}
+           
         </div>
     );
 }

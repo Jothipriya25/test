@@ -20,8 +20,9 @@
     .product-image {
       width: 100px;
       height: 100px;
-      object-fit: cover;
+      object-fit: contain;
       margin-right: 16px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     }
     
     .product-details {

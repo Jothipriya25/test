@@ -13,6 +13,7 @@ body{
     width: 60px;
     height: 40px;
     margin-left: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 .nav ul{
@@ -36,7 +37,7 @@ body{
 .nav-list a:hover{
     background-color: rgb(247, 202, 221);
     color:rgb(233, 108, 108);
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 .site-title{
@@ -45,4 +46,3 @@ body{
     border-radius: 7%;
     padding: 0;
 }
-
