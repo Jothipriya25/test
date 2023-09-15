@@ -54,3 +54,15 @@
         display: grid;
         grid-template-columns: auto auto auto;
     }
+
+  .Sugg_btn button{
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: #feaabb;
+    color: #551a8b;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }

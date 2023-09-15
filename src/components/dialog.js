@@ -6,26 +6,29 @@ function Modal() {
   const [Age, setAge] = useState("");
   const [Occasion, setOccasion] = useState("");
   const [radioValue, setradioValue] = useState("");
-  const [isFormValid, setisFormValid] = useState(false);
+  // const [isFormValid, setisFormValid] = useState(false);
   const navigate = useNavigate();
 
-  const handleAgeChange = (event) => {
+  const handleChange = (event) => {
     event.persist();
     setAge(event.target.value);
-    validateForm();
-  };
-
-  const handleOccasionChange = (event) => {
-    event.persist();
     setOccasion(event.target.value);
-    validateForm();
+    setradioValue(event.target.value);
+    console.log(Age,Occasion,radioValue);
+    console.log(setAge,setOccasion,setradioValue);
   };
 
-  const handleRadioChange = (event) => {
-    event.persist();
-    setradioValue(event.target.value);
-    validateForm();
-  };
+  // const handleOccasionChange = (event) => {
+  //   event.persist();
+  //   setOccasion(event.target.value);
+  //   validateForm();
+  // };
+
+  // const handleRadioChange = (event) => {
+  //   event.persist();
+  //   setradioValue(event.target.value);
+  //   validateForm();
+  // };
 
   const validateForm = () => {
     console.log("DropDown 1", Age);
@@ -47,11 +50,18 @@ function Modal() {
   };
 
   const handleCancel = () => {
-    navigate("/");
+    navigate("/product");
+  };
+
+  const handleContinue = () => {
+    
+    navigate("/product");
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form 
+    // onSubmit={handleSubmit}
+    >
       <div className="Dialog_bg">
         <div className="Dialog_box">
           <div className="Dialog_box1">
@@ -63,7 +73,9 @@ function Modal() {
                 <label>
                   <b>Select Age Range: </b>
                 </label>
-                <select className="age" value={Age} onChange={handleAgeChange}>
+                <select className="age" 
+                value={Age} onChange={handleChange}
+                >
                   <option value="age1">Default</option>
                   <option value="age2">5 - 15</option>
                   <option value="age3">15 - 25</option>
@@ -80,7 +92,7 @@ function Modal() {
                 <select
                   className="occasion"
                   value={Occasion}
-                  onChange={handleOccasionChange}
+                  onChange={handleChange}
                 >
                   <option value="occasion1">Default</option>
                   <option value="occasion2">Birthday</option>
@@ -102,8 +114,8 @@ function Modal() {
                   type="radio"
                   value="Male"
                   name="gender"
-                  checked={radioValue === "Male"}
-                  onChange={handleRadioChange}
+                  // checked={radioValue === "Male"}
+                  onChange={handleChange}
                 />
 
                 <b> Male</b>
@@ -113,8 +125,8 @@ function Modal() {
                   type="radio"
                   value="Female"
                   name="gender"
-                  checked={radioValue === "Female"}
-                  onChange={handleRadioChange}
+                  // checked={radioValue === "Female"}
+                  onChange={handleChange}
                 />
 
                 <b>Female</b>
@@ -125,7 +137,7 @@ function Modal() {
               <button id="cancelBtn" onClick={handleCancel}>
                 Cancel
               </button>
-              <button type="submit">Continue</button>
+              <button type="submit" onClick={handleContinue}>Continue</button>
             </div>
           </div>
         </div>

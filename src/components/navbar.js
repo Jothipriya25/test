@@ -18,7 +18,7 @@ export default function navbar(){
             <a href="/help" className="help"><h3>Help</h3></a>
             </li>
             <li>
-            <a href="/dialog" className="dialog"><h3>Product</h3></a>
+            <a href="/product" className="product"><h3>Product</h3></a>
             </li>
         </ul>
     </nav>
