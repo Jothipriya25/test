@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dialog from './components/dialog';
@@ -5,9 +6,12 @@ import Navbar from './components/navbar';
 import Home from './components/home';
 import Help from './components/help';
 import Product from './components/product';
+import AllProduct from './components/allproducts';
 
 
 function App() {
+
+  const [productsData, setProductsData] = useState([]);
 
   return(
 
@@ -16,8 +20,14 @@ function App() {
     <Routes>
       <Route path='/' exact Component={Home} />
       <Route path='/help' exact Component={Help} />
-      <Route path='/dialog' exact Component={Dialog} />
-      <Route path='/product' exact Component={Product} />
+      {/* <Route path='/dialog' exact Component={Dialog} />
+      <Route path='/product' element={<Product productsData = {productsData} />} /> */}
+      <Route
+          path="/dialog"
+          element={<Dialog setProductsData={setProductsData} />}
+      />
+      <Route path="/product" element={<Product productsData={productsData} />} />
+      <Route path='/allproduct' exact Component={AllProduct} />
     </Routes>
   </Router>
 

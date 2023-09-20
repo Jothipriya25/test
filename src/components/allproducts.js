@@ -1,31 +1,18 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { BiSolidHandDown } from "react-icons/bi";
 import "./product.css";
-// import { useLocation } from "react-router-dom";
 
-function Product({productsData}) {
-  // const [products,setProducts] = useState([]);
+function AllProduct() {
 
-  //     useEffect(() => {
-  //     fetch("http://localhost:8000/getAllProducts")
-  //     .then((res)=>res.json())
-  //     .then((result)=>setProducts(result))
-  //     .catch((err) => console.log(err));
+  const [products,setProducts] = useState([]);
 
-  // },[]
-  // );
+      useEffect(() => {
+      fetch("http://localhost:8000/getAllProducts")
+      .then((res)=>res.json())
+      .then((result)=>setProducts(result))
+      .catch((err) => console.log(err));
 
-  // const [products, setProducts] = useState([]);
-  // const location = useLocation();
-  // const { productsData } = location.state;
-
-
-  // useEffect(() => {
-  //   fetch(`http://localhost:8000/getProduct/${formData.Age}/${formData.Occasion}/${formData.radioValue}`)
-  //     .then((res) => res.json())
-  //     .then((result) => setProducts(result))
-  //     .catch((err) => console.log(err));
-  // }, []);
+  },[]);
 
   return (
     <div>
@@ -35,7 +22,7 @@ function Product({productsData}) {
         <a href="/dialog"><button><b>Click Here..!</b></button></a>
       </div>
     <div className="product-list">
-      {productsData.map((product) => (
+      {products.map((product) => (
         <div key={product.prodId}>
           <div>
             <div className="product-card">
@@ -62,5 +49,4 @@ function Product({productsData}) {
   );
 }
 
-
-export default Product;
+export default AllProduct;
