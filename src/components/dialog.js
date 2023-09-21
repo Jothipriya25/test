@@ -8,34 +8,8 @@ function Modal({ setProductsData }) {
   const [Occasion, setOccasion] = useState("");
   const [radioValue, setradioValue] = useState("");
   const [isFormValid, setisFormValid] = useState(false);
-  const [showPopup, setShowPopup] = useState(false);
+  // const [showPopup, setShowPopup] = useState(false);
   const navigate = useNavigate();
-
-  const validateGender = () => {
-    setShowPopup(true); // Show the popup
-  };
-
-  const closePopup = () => {
-    setShowPopup(false); // Hide the popup
-  };
-
-
-  // function showPopup() {
-  //   const popup = document.getElementById("genderPopup");
-  //   popup.style.display = "block";
-  // }
-  
-  // // Function to hide the popup
-  // function closePopup() {
-  //   const popup = document.getElementById("genderPopup");
-  //   popup.style.display = "none";
-  // }
-  
-  // Call showPopup() when gender is not selected
-  // if (!radioValue) {
-  //   showPopup();
-  // }
-  
 
   const handleAgeChange = (event) => {
     event.persist();
@@ -93,9 +67,9 @@ function Modal({ setProductsData }) {
         // Handle network or other errors here.
       }
     } else {
-      // alert("Please select a gender");
+      alert("Please select a gender");
       // setShowDialog(true);
-      validateGender(); 
+      // validateGender(); 
     }
   };
   
@@ -178,9 +152,9 @@ function Modal({ setProductsData }) {
                   className="gender"
                   type="radio"
                   id="female"
-                  value="Female"
+                  value="FM"
                   name="gender"
-                  checked={radioValue === "Female"}
+                  checked={radioValue === "FM"}
                   onChange={handleRadioChange}
                 />
 
@@ -193,31 +167,12 @@ function Modal({ setProductsData }) {
                 Cancel
               </button>
               <button type="submit" 
-              onClick={showPopup}
+              // onClick={showPopup}
               >Continue</button>
             </div>
           </div>
         </div>
       </div>
-
-          {/* Popup */}
-          {showPopup && (
-        <div className="popup">
-          <div className="popup-content">
-            <p>Please select a gender.</p>
-            <button onClick={closePopup}>Close</button>
-          </div>
-        </div>
-      )}
-
-
-      {/* <div id="genderPopup" class="popup">
-        <div class="popup-content">
-          <p>Please select a gender.</p>
-          <button id="closePopup" onClick={closePopup}>Close</button>
-        </div>
-      </div> */}
-      {/* <div className="overlay"></div> */}
 
     </form>
     
